@@ -45,7 +45,7 @@ export default function Navbar() {
                 <li>Register</li>
               </a>
               <a className="link" href="/admin">
-                <li>Admins</li>
+                <li>Admin</li>
               </a>
             </>
           )}
