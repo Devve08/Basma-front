@@ -32,7 +32,7 @@ export default function SessionProvider({ children }) {
       body.append("email", email);
       body.append("password", password);
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/users/login",
+        "https://basma-task.herokuapp.com/api/users/login",
         body
       );
 
@@ -56,7 +56,7 @@ export default function SessionProvider({ children }) {
       body.append("name", names);
       body.append("password", password);
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/users/register",
+        "https://basma-task.herokuapp.com/api/users/register",
         body
       );
       const { access_token, name, id, role } = response.data;
@@ -82,7 +82,7 @@ export default function SessionProvider({ children }) {
       body.append("name", names);
       body.append("password", password);
       await axios.post(
-        "http://127.0.0.1:8000/api/users/register",
+        "https://basma-task.herokuapp.com/api/users/register",
         body
       );
       setAddedSuccessfully(true);
@@ -101,7 +101,7 @@ export default function SessionProvider({ children }) {
       body.append("email", email);
       body.append("password", password);
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/admins/login",
+        "https://basma-task.herokuapp.com/api/admins/login",
         body
       );
       const { access_token, name, id, role } = response.data;
@@ -123,7 +123,7 @@ export default function SessionProvider({ children }) {
     body.append("name", name);
     body.append("password", password);
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/admins/register",
+      "https://basma-task.herokuapp.com/api/admins/register",
       {
         body,
       }

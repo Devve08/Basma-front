@@ -25,7 +25,7 @@ export default function AdminAverageData() {
   });
 
   const LastDay = async () => {
-    let response = await axios.get("http://127.0.0.1:8000/api/admins/lastday", {
+    let response = await axios.get("https://basma-task.herokuapp.com/api/admins/lastday", {
       headers: {
         Authorization: `Bearer ${access_token}`,
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ export default function AdminAverageData() {
 
   const LastWeek = async () => {
     let response = await axios.get(
-      "http://127.0.0.1:8000/api/admins/lastweek",
+      "https://basma-task.herokuapp.com/api/admins/lastweek",
       {
         headers: {
           Authorization: `Bearer ${access_token}`,
@@ -52,7 +52,7 @@ export default function AdminAverageData() {
 
   const LastMonth = async () => {
     let response = await axios.get(
-      "http://127.0.0.1:8000/api/admins/lastmonth",
+      "https://basma-task.herokuapp.com/api/admins/lastmonth",
       {
         headers: {
           Authorization: `Bearer ${access_token}`,
@@ -68,7 +68,7 @@ export default function AdminAverageData() {
 
   const LastThreeMonths = async () => {
     let response = await axios.get(
-      "http://127.0.0.1:8000/api/admins/lastthreemonths",
+      "https://basma-task.herokuapp.com/api/admins/lastthreemonths",
       {
         headers: {
           Authorization: `Bearer ${access_token}`,
@@ -84,7 +84,7 @@ export default function AdminAverageData() {
 
   const LastYear = async () => {
     let response = await axios.get(
-      "http://127.0.0.1:8000/api/admins/lastyear",
+      "https://basma-task.herokuapp.com/api/admins/lastyear",
       {
         headers: {
           Authorization: `Bearer ${access_token}`,
