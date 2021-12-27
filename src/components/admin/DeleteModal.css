@@ -1,0 +1,39 @@
+.delete-modal-container {
+  width: 10rem;
+  height: 7rem;
+  border-radius: 5px;
+  left: 10rem;
+  right: 10rem;
+  top: 10rem;
+  background-color: #ff2d47;
+  display: flex;
+  margin: auto;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  color: white;
+}
+
+.delete-modal-title{
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.delete-modal-choice {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.delete-modal-choice button{
+    padding: .4rem .7rem;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,147 @@
+.sixth-container {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.sixth-container-upper {
+  width: 100%;
+}
+
+.sixth-container-upper-title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+}
+
+.sixth-container-upper-dash {
+  border: 1px solid #ff2d47;
+  width: 5%;
+  border-width: 1px;
+  margin-bottom: 1rem;
+  margin: auto;
+}
+
+.sixth-container-upper-text {
+  font-family: "Heebo", sans-serif;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.sixth-container-upper {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.sixth-container-upper-cards {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.sixth-container-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.card-list ul li {
+  list-style: none;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid rgb(189, 189, 189);
+  width: 100%;
+}
+
+.card-list ul li:last-child {
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.card-list ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-list {
+  width: 80%;
+}
+
+.card-icon i {
+  font-size: 4rem;
+  padding: 2rem 0;
+  color: #ff2d47;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+}
+
+.card-price {
+  font-size: 2rem;
+  color: #ff2d47;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+}
+
+.card-price span {
+  font-size: 1.4rem;
+}
+
+
+.card-btn{
+    background-color: #ff2d47;
+    font-family: "Heebo", sans-serif;
+    color: white;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -1rem;
+}
+
+
+.sixth-container-lower{
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+    margin-top: 3rem;
+}
+
+.sixth-container-lower a{
+    color: black;
+}
+
+@media only screen and (max-width: 750px){
+
+  .sixth-container-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  .sixth-container-upper-cards {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+  }
+}

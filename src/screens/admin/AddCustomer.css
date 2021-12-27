@@ -1,0 +1,39 @@
+.add-costumer-average-registrations{
+    width: 100%;
+    padding: 2rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avg-box{
+    width: 20%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avg-title{
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.avg-total{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.avg-perday{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.center{
+    margin: auto;
+    margin-top: 2rem;
+}

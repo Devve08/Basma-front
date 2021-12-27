@@ -1,0 +1,28 @@
+.navbar-container-admin{
+    width: 100%;
+    height: 10vh;
+}
+
+.navbar-admin{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.navbar-admin ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+.navbar-admin ul li{
+    color: white;
+    font-weight: bold;
+    list-style: none;
+    cursor: pointer;
+    font-family: "Heebo", sans-serif;
+}

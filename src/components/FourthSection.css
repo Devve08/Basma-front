@@ -1,0 +1,146 @@
+.fourth-container {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.fourth-container-inner {
+  padding: 3rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fourth-container-left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.fourth-container-right {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.fourth-container-title {
+  font-size: 3rem;
+  width: 65%;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+}
+
+.fourth-container-left ul {
+  width: 80%;
+}
+
+.fourth-container-left ul li {
+  margin-bottom: 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Heebo", sans-serif;
+}
+
+.fourth-container-left ul li div {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 1rem;
+  color: #ff2d47;
+  width: 6rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fourth-container-left ul li div i {
+  font-size: 1.5rem;
+}
+
+.fourth-container-button {
+  background-color: #ff2d47;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+  cursor: pointer;
+}
+
+.arrow-right{
+ align-self: center;
+ font-size: 3rem;
+ padding: 0 2rem;
+}
+
+
+@media only screen and (max-width: 750px){
+
+  .fourth-container-inner {
+    padding: 3rem;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fourth-container-right {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .fourth-container-left ul li {
+    margin-bottom: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+  }
+
+  .fourth-container-title {
+    font-size: 3rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+  }
+
+  .fourth-container-left ul li div {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .fourth-container-button {
+    background-color: #ff2d47;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-family: "Heebo", sans-serif;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .fourth-container-left ul {
+    width: 80%;
+    margin: auto;
+  }
+}

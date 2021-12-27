@@ -1,0 +1,98 @@
+.customers-container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.customers-container-table{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    justify-content: space-around;
+}
+
+.search-btn{
+    padding: .6rem .8rem;
+    background-color: #ff2d47;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.customers-container-table-upper-search input{
+    padding: .5rem ;
+    outline: none;
+    border: 2px solid #ff2d47;
+}
+
+.customers-container-table-upper-search select{
+    padding: .4rem;
+    border: 2px solid #ff2d47;
+    background-color: white;
+    font-weight: bold;
+}
+
+.customers-container-table-upper{
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.customers-container-tabl-upper select{
+    width: 5rem;
+}
+
+.customers-container-tabl-upper input{
+    padding: .5rem;
+    outline: none;
+}
+
+.customer-info th{
+    width: 25%;
+    padding: 1rem;
+}
+
+.customer-info-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.customer-info-title th{
+    color: red;
+    width: 25%;
+}
+
+.customer-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination-btn{
+    padding: .5rem 1rem;
+    margin-right: 1rem;
+    background-color: #ff2d47;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.pagination-btn i{
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.delete-btn-customer{
+    background-color: #ff2d47;
+    color: white;
+    padding: .5rem .8rem;
+    border: none;
+    cursor: pointer;
+}

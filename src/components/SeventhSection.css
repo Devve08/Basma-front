@@ -1,0 +1,90 @@
+.seventh-container {
+  width: 100%;
+}
+
+.seventh-container-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/download-bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+}
+
+.seventh-container-background-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.seventh-container-background-text {
+  font-family: "Heebo", sans-serif;
+  color: white;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.seventh-container-background-icons{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 30%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.seventh-container-background-icons img{
+    width: 50%;
+    height: 4.5rem;
+}
+
+.seventh-container-background-text-last{
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding: 2rem 0 3rem;
+}
+
+.subscribe-section{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    font-family: "Heebo", sans-serif;
+    padding-top: 3rem;
+}
+
+.subscribe-section-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subscribe-section-text{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.subscribe-section input{
+    padding: .5rem;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 1rem;
+}
+
+.subscribe-section-btn{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #ff2d47;
+    padding: .7rem 0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}

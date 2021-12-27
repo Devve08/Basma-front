@@ -1,0 +1,98 @@
+.fifth-container {
+  width: 100%;
+  background-color: #ff2d47;
+}
+
+.fifth-container-upper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.fifth-container-upper-title {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 4rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+  color: white;
+}
+
+.fifth-container-upper-text {
+    text-align: center;
+    color: white;
+    font-family: "Heebo", sans-serif;
+    width: 60%;
+    margin: auto;
+}
+
+.fifth-container-lower{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 80%;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+.fifth-container-lower-instruction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifth-container-lower{
+    text-align: center;
+}
+
+.fifth-container-lower-icon{
+    font-size: 3rem;
+}
+
+.fifth-container-lower-title{
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: "Heebo", sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 750px){
+  .fifth-container-lower{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+.fifth-container-lower-icon{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.fifth-container-lower-instruction{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.fifth-container-upper-text {
+  text-align: center;
+  color: white;
+  font-family: "Heebo", sans-serif;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.arrow-right{
+  margin-bottom: 2rem;
+}
+}
