@@ -112,7 +112,7 @@ export default function Customers() {
         <div className="customers-container-table-upper">
           <div className="customers-container-table-upper-search">
             <button className="search-btn" onClick={search}>
-              Seatch
+              Search
             </button>
             <input onChange={handleSearch} type="text" />
             <select onChange={handleChangeSearch} name="" id="">
