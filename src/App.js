@@ -14,10 +14,10 @@ import LoginAdmin from "./screens/admin/AdminLogin";
 import Register from "./screens/Register";
 import SessionContext from "./context/SessionContext";
 import { useContext } from "react";
-import AdminHome from './screens/admin/AdminHome'
-import AddCustomer from './screens/admin/AddCustomer'
+import AdminHome from "./screens/admin/AdminHome";
+import AddCustomer from "./screens/admin/AddCustomer";
 import Home from "./screens/Home";
-import Customers from './screens/admin/Customers'
+import Customers from "./screens/admin/Customers";
 
 function App() {
   const {
@@ -27,9 +27,22 @@ function App() {
   } = useContext(SessionContext);
   return (
     <div className="App">
-      
-      
-      {access_token && role === "Admin" && (
+      <Navbar />
+      <div className="polygon"></div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </div>
+  );
+}
+
+export default App;
+
+/**
+ * 
+ * {access_token && role === "Admin" && (
         <Routes>
           <Route path="/" element={<AdminHome />} />
           <Route
@@ -71,8 +84,4 @@ function App() {
           </Routes>
         </>
       )}
-    </div>
-  );
-}
-
-export default App;
+ */
