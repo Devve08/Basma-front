@@ -28,10 +28,10 @@ function App() {
   return (
     <div className="App">
       
-
+      
       {access_token && role === "Admin" && (
         <Routes>
-          <Route path="/" element={<Navigate to="/addcustomer" />} />
+          <Route path="/" element={<AdminHome />} />
           <Route
             path="/admin"
             element={<Navigate replace to="/addcustomer" />}
@@ -46,7 +46,7 @@ function App() {
           <Navbar />
           <div className="polygon"></div>
           <Routes>
-            <Route path="/" element={<Navigate to="home" />} />
+            <Route path="/" element={<Home/>} />
             <Route path="/login" element={<Navigate to="/home" />} />
             <Route path="/register" element={<Navigate to="/home" />} />
             <Route path="/adminhome" element={<Navigate to="/admin" />} />
@@ -60,7 +60,7 @@ function App() {
           <Navbar />
           <div className="polygon"></div>
           <Routes>
-            <Route path="/" element={<Navigate to="/login" />} />
+            <Route path="/" element={<Login />} />
             <Route path="/home" element={<Navigate to="/login" />} />
             <Route path="/customers" element={<Navigate to="/admin" />} />
             <Route path="/addcustomer" element={<Navigate to="/admin" />} />
