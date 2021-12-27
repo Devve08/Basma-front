@@ -27,22 +27,7 @@ function App() {
   } = useContext(SessionContext);
   return (
     <div className="App">
-      <Navbar />
-      <div className="polygon"></div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-      </Routes>
-    </div>
-  );
-}
-
-export default App;
-
-/**
- * 
- * {access_token && role === "Admin" && (
+      {access_token && role === "Admin" && (
         <Routes>
           <Route path="/" element={<AdminHome />} />
           <Route
@@ -59,7 +44,7 @@ export default App;
           <Navbar />
           <div className="polygon"></div>
           <Routes>
-            <Route path="/" element={<Home/>} />
+            <Route path="/" element={<Home />} />
             <Route path="/login" element={<Navigate to="/home" />} />
             <Route path="/register" element={<Navigate to="/home" />} />
             <Route path="/adminhome" element={<Navigate to="/admin" />} />
@@ -84,4 +69,8 @@ export default App;
           </Routes>
         </>
       )}
- */
+    </div>
+  );
+}
+
+export default App;
