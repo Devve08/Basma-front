@@ -28,7 +28,7 @@ export default function LoginAdmin() {
       <input
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Password"
-        type="text"
+        type="password"
       />
       <button onClick={handleLogin}>Login as Admin</button>
     </div>

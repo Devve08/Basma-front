@@ -32,7 +32,7 @@ function App() {
           <Route path="/" element={<AdminHome />} />
           <Route
             path="/admin"
-            element={<Navigate replace to="/addcustomer" />}
+            element={<AddCustomer />}
           />
           <Route path="/adminhome" element={<AdminHome />} />
           <Route path="/addcustomer" index element={<AddCustomer />} />
