@@ -117,28 +117,28 @@ export default function AdminAverageData() {
         <div className="avg-title">Last week</div>
         <div className="avg-total">Total: {lastWeek.info.total}</div>
         <div className="avg-perday">
-          Avg/day: {lastWeek.info.average.toFixed(1)}
+          Avg/day: {parseInt(lastWeek.info.average)}
         </div>
       </div>
       <div className="avg-box">
         <div className="avg-title">Last month</div>
         <div className="avg-total">Total: {lastMonth.info.total}</div>
         <div className="avg-perday">
-          Avg/day: {lastMonth.info.average.toFixed(1)}
+          Avg/day: {parseInt(lastMonth.info.average)}
         </div>
       </div>
       <div className="avg-box">
         <div className="avg-title">Last three months</div>
         <div className="avg-total">Total: {lastThreeMonths.info.total}</div>
         <div className="avg-perday">
-          Avg/day: {lastThreeMonths.info.average.toFixed(1)}
+          Avg/day: {parseInt(lastThreeMonths.info.average)}
         </div>
       </div>
       <div className="avg-box">
         <div className="avg-title">Last year</div>
         <div className="avg-total">Total: {lastYear.info.total}</div>
         <div className="avg-perday">
-          Avg/day: {lastYear.info.average.toFixed(1)}
+          Avg/day: {parseInt(lastYear.info.average)}
         </div>
       </div>
     </div>
