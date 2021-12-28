@@ -35,7 +35,7 @@ function App() {
             element={<AddCustomer />}
           />
           <Route path="/adminhome" element={<AdminHome />} />
-          <Route path="/addcustomer" index element={<AddCustomer />} />
+          <Route path="/addcustomer"  element={<AddCustomer />} />
           <Route path="/customers" element={<Customers />} />
         </Routes>
       )}
