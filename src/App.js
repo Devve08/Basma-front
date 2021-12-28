@@ -29,10 +29,10 @@ function App() {
     <div className="App">
       {access_token && role === "Admin" && (
         <Routes>
-          <Route path="/" element={<AdminHome />} />
+          <Route path="/" element={<Navigate to='/addcustomer' />} />
           <Route
             path="/admin"
-            element={<Navigate to='/addcutomer'/>}
+            element={<Navigate to='/addcustomer'/>}
           />
           <Route path="/adminhome" element={<AdminHome />} />
           <Route path="/addcustomer"  element={<AddCustomer />} />
