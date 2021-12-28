@@ -32,7 +32,7 @@ function App() {
           <Route path="/" element={<AdminHome />} />
           <Route
             path="/admin"
-            element={<AddCustomer />}
+            element={<Navigate to='/addcutomer'/>}
           />
           <Route path="/adminhome" element={<AdminHome />} />
           <Route path="/addcustomer"  element={<AddCustomer />} />
