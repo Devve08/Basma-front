@@ -11,7 +11,6 @@ import ThirdSection from "../components/ThirdSection";
 export default function Home() {
   return (
     <>
-      
       <FirstSection />
       <SecondSection />
       <ThirdSection />
