@@ -41,7 +41,7 @@ export default function SessionProvider({ children }) {
       body.append("email", email);
       body.append("password", password);
       const response = await axios.post(
-        `${config.Base_testing}/api/users/login`,
+        `${config.Base_Online}/api/users/login`,
         body
       );
       const { access_token, name, id, role } = response.data;
@@ -63,7 +63,7 @@ export default function SessionProvider({ children }) {
       // body.append("name", names);
       // body.append("password", password);
       const response = await axios.post(
-        `${config.Base_testing}/api/users/register`,
+        `${config.Base_Online}/api/users/register`,
         data,
         {}
       );
