@@ -57,7 +57,6 @@ function App() {
           </Routes>
         </>
       )}
-      //{" "}
       {access_token && role === "Admin" && (
         <Routes>
           <Route path="/" element={<Navigate to="/addcustomer" />} />
