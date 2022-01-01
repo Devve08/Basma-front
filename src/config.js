@@ -1,7 +1,7 @@
 const config = {
     Base_Online: "https://basma-task.herokuapp.com/api",
-    Base_testing: "http://127.0.0.1:8000/api",
-    RECAPTCHA_SITEKEY: "6Lc6894dAAAAAM_mmzfav_c9VgZZkw6_yPC7OKz_"
+    Base_testing: "http://127.0.0.1:8000",
+    RECAPTCHA_SITEKEY: "6LclQ-MdAAAAABJDnh6kanccvpVhK0V6LG2BnbHt"
 }
 
 export default config;

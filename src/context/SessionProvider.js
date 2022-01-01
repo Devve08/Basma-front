@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import SessionContext from "./SessionContext";
 import axios from "axios";
-import ReCAPTCHA from "react-google-recaptcha";
 import config from "../config";
 
-const init_form_data = {
-
+const init_user_info = {
+  name: '',
+  email: '',
+  password: '',
+  recaptcha_token : false
 }
 
 export default function SessionProvider({ children }) {
+  const [data, setData] = useState(init_user_info);
   const [loginError, setLoginError] = useState(false);
   const [registerError, setRegisterError] = useState(false);
   const [adminLoginError, setAdminLoginError] = useState(false);
@@ -38,7 +41,7 @@ export default function SessionProvider({ children }) {
       body.append("email", email);
       body.append("password", password);
       const response = await axios.post(
-        `${config.Base_testing}/users/login`,
+        `${config.Base_testing}/api/users/login`,
         body
       );
       const { access_token, name, id, role } = response.data;
@@ -53,16 +56,16 @@ export default function SessionProvider({ children }) {
       setLoginError(true);
     }
   };
-
-  const CostumerRegister = async (names, email, password) => {
+  const CostumerRegister = async () => {
     try {
-      const body = new FormData();
-      body.append("email", email);
-      body.append("name", names);
-      body.append("password", password);
+      // const body = new FormData();
+      // body.append("email", email);
+      // body.append("name", names);
+      // body.append("password", password);
       const response = await axios.post(
-        `${config.Base_testing}/users/register`,
-        body
+        `${config.Base_testing}/api/users/register`,
+        data,
+        {}
       );
       const { access_token, name, id, role } = response.data;
       localStorage.setItem("access_token", access_token);
@@ -161,6 +164,8 @@ export default function SessionProvider({ children }) {
     registerError,
     adminLoginError,
     cusAddedSuccessfully,
+    setData,
+    data,
     actions: {
       AdminLogin,
       AdminRegister,
