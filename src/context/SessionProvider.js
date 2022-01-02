@@ -98,10 +98,11 @@ export default function SessionProvider({ children }) {
       body.append("email", email);
       body.append("name", names);
       body.append("password", password);
-      await axios.post(
-        "https://basma-task.herokuapp.com/api/users/addcustomer",
+      const response = await axios.post(
+        "https://basma-task.herokuapp.com/api/admins/addcustomer",
         body
       );
+      console.log(response)
       setAddedSuccessfully(true);
     } catch (error) {
       console.log(error.message);
