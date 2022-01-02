@@ -4,11 +4,11 @@ import axios from "axios";
 import config from "../config";
 
 const init_user_info = {
-  name: '',
-  email: '',
-  password: '',
-  recaptcha_token : false
-}
+  name: "",
+  email: "",
+  password: "",
+  recaptcha_token: false,
+};
 
 export default function SessionProvider({ children }) {
   const [data, setData] = useState(init_user_info);
@@ -58,22 +58,25 @@ export default function SessionProvider({ children }) {
   };
   const CostumerRegister = async () => {
     try {
-      // const body = new FormData();
-      // body.append("email", email);
-      // body.append("name", names);
-      // body.append("password", password);
       const response = await axios.post(
-        `${config.Base_Online}/api/users/register`,
-        data,
-        {}
+        `https://basma-task.herokuapp.com/api/users/register`,
+        data
       );
-      const { access_token, name, id, role } = response.data;
-      localStorage.setItem("access_token", access_token);
-      localStorage.setItem("id", id);
-      localStorage.setItem("name", name);
-      localStorage.setItem("role", role);
-      const user = { access_token, id, name, role };
-      updateSession({ user });
+      console.log(response);
+      if (
+        !response.data.error_msg &&
+        response.data.name &&
+        response.data.access_token
+      ) {
+        const { access_token, name, id, role } = response.data;
+        localStorage.setItem("access_token", access_token);
+        localStorage.setItem("id", id);
+        localStorage.setItem("name", name);
+        localStorage.setItem("role", role);
+        const user = { access_token, id, name, role };
+        updateSession({ user });
+      }
+      console.log(response.data.error_msg);
     } catch (error) {
       console.log(error.message);
       setRegisterError(true);

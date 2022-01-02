@@ -27,7 +27,7 @@ function App() {
   } = useContext(SessionContext);
   return (
     <div className="App">
-      {!access_token && (
+       {!access_token && (
         <>
           <Navbar />
           <div className="polygon"></div>
@@ -57,6 +57,7 @@ function App() {
           </Routes>
         </>
       )}
+      
       {access_token && role === "Admin" && (
         <Routes>
           <Route path="/" element={<Navigate to="/addcustomer" />} />
@@ -71,3 +72,47 @@ function App() {
 }
 
 export default App;
+
+
+/*
+   {!access_token && (
+        <>
+          <Navbar />
+          <div className="polygon"></div>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/home" element={<Navigate to="/login" />} />
+            <Route path="/customers" element={<Navigate to="/admin" />} />
+            <Route path="/addcustomer" element={<Navigate to="/admin" />} />
+            <Route path="/adminhome" element={<Navigate to="/admin" />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/admin" element={<LoginAdmin />} />
+          </Routes>
+        </>
+      )}
+      {access_token && role === "Costumer" && (
+        <>
+          <Navbar />
+          <div className="polygon"></div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Navigate to="/home" />} />
+            <Route path="/register" element={<Navigate to="/home" />} />
+            <Route path="/adminhome" element={<Navigate to="/admin" />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/admin" element={<LoginAdmin />} />
+          </Routes>
+        </>
+      )}
+      
+      {access_token && role === "Admin" && (
+        <Routes>
+          <Route path="/" element={<Navigate to="/addcustomer" />} />
+          <Route path="/admin" element={<Navigate to="/addcustomer" />} />
+          <Route path="/adminhome" element={<AdminHome />} />
+          <Route path="/addcustomer" element={<AddCustomer />} />
+          <Route path="/customers" element={<Customers />} />
+        </Routes>
+      )}
+*/
