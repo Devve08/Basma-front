@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
+import config from "../../config";
 import SessionContext from "../../context/SessionContext";
 
 export default function AdminAverageData() {

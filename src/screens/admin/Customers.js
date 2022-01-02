@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
 import AdminNavbar from "../../components/admin/AdminNavbar";
 import DeleteModal from "../../components/admin/DeleteModal";
+import config from "../../config";
 import SessionContext from "../../context/SessionContext";
 import "./Customers.css";
 

@@ -97,7 +97,7 @@ export default function SessionProvider({ children }) {
         body,
         {
           headers: {
-            Authorization: `Bearer ${access_token}`,
+            Authorization: `Bearer ${session.user.access_token}`,
             "Content-Type": "application/json",
           },
         }
