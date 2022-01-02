@@ -60,7 +60,13 @@ export default function SessionProvider({ children }) {
     try {
       const response = await axios.post(
         `https://basma-task.herokuapp.com/api/users/register`,
-        data
+        data,
+        {
+          headers: {
+            Authorization: `Bearer ${access_token}`,
+            "Content-Type": "application/json",
+          },
+        }
       );
       console.log(response);
       if (
@@ -93,7 +99,7 @@ export default function SessionProvider({ children }) {
       body.append("name", names);
       body.append("password", password);
       await axios.post(
-        "https://basma-task.herokuapp.com/api/users/register",
+        "https://basma-task.herokuapp.com/api/users/addcustomer",
         body
       );
       setAddedSuccessfully(true);
