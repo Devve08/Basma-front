@@ -59,7 +59,7 @@ export default function SessionProvider({ children }) {
   const CostumerRegister = async () => {
     try {
       const response = await axios.post(
-        `https://basma-task.herokuapp.com/api/users/register`,
+        `${config.Base_testing}/api/users/register`,
         data
       );
       console.log(response);
@@ -93,7 +93,7 @@ export default function SessionProvider({ children }) {
       body.append("name", names);
       body.append("password", password);
       const response = await axios.post(
-        "https://basma-task.herokuapp.com/api/admins/addcustomer",
+        `${config.Base_testing}/api/admins/addcustomer`,
         body,
         {
           headers: {
@@ -122,7 +122,7 @@ export default function SessionProvider({ children }) {
       body.append("email", email);
       body.append("password", password);
       const response = await axios.post(
-        "https://basma-task.herokuapp.com/api/admins/login",
+        `${config.Base_testing}/api/admins/login`,
         body
       );
       const { access_token, name, id, role } = response.data;
@@ -144,7 +144,7 @@ export default function SessionProvider({ children }) {
     body.append("name", name);
     body.append("password", password);
     const response = await axios.post(
-      "https://basma-task.herokuapp.com/api/admins/register",
+      `${config.Base_testing}/api/admins/register`,
       {
         body,
       }
