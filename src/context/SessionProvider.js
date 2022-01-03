@@ -59,7 +59,7 @@ export default function SessionProvider({ children }) {
   const CostumerRegister = async () => {
     try {
       const response = await axios.post(
-        `${config.Base_testing}/api/users/register`,
+        `${config.Base_Online}/api/users/register`,
         data
       );
       console.log(response);
@@ -93,7 +93,7 @@ export default function SessionProvider({ children }) {
       body.append("name", names);
       body.append("password", password);
       const response = await axios.post(
-        `${config.Base_testing}/api/admins/addcustomer`,
+        `${config.Base_Online}/api/admins/addcustomer`,
         body,
         {
           headers: {
@@ -103,10 +103,13 @@ export default function SessionProvider({ children }) {
         }
       );
       console.log(response);
-      if (!response) {
+      if (response.data.message === "User added succesfully") {
+        setRegisterError(false);
+        setAddedSuccessfully(true);
+      } else if (response.data.message === "something went wrong") {
+        setAddedSuccessfully(false);
         setRegisterError(true);
       }
-      setAddedSuccessfully(true);
     } catch (error) {
       console.log(error.message);
       setRegisterError(true);
@@ -122,7 +125,7 @@ export default function SessionProvider({ children }) {
       body.append("email", email);
       body.append("password", password);
       const response = await axios.post(
-        `${config.Base_testing}/api/admins/login`,
+        `${config.Base_Online}/api/admins/login`,
         body
       );
       const { access_token, name, id, role } = response.data;
@@ -144,7 +147,7 @@ export default function SessionProvider({ children }) {
     body.append("name", name);
     body.append("password", password);
     const response = await axios.post(
-      `${config.Base_testing}/api/admins/register`,
+      `${config.Base_Online}/api/admins/register`,
       {
         body,
       }

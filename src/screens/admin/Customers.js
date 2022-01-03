@@ -23,7 +23,7 @@ export default function Customers() {
 
   const getCustomers = async () => {
     let response = await axios.get(
-      `${config.Base_testing}/api/admins/costumers/${pagination}`,
+      `${config.Base_Online}/api/admins/costumers/${pagination}`,
       {
         headers: {
           Authorization: `Bearer ${access_token}`,
@@ -66,7 +66,7 @@ export default function Customers() {
 
   const deleteCustomer = async (id) => {
     await axios.delete(
-      `${config.Base_testing}/api/admins/customers/${id}`,
+      `${config.Base_Online}/api/admins/customers/${id}`,
       {
         headers: {
           Authorization: `Bearer ${access_token}`,
@@ -79,7 +79,7 @@ export default function Customers() {
 
   const search = async () => {
     let response = await axios.get(
-      `${config.Base_testing}/api/admins/${typeSearch}/?query=${inputSearch}`,
+      `${config.Base_Online}/api/admins/${typeSearch}/?query=${inputSearch}`,
       {
         headers: {
           Authorization: `Bearer ${access_token}`,

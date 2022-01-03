@@ -26,7 +26,7 @@ export default function AdminAverageData() {
   });
 
   const LastDay = async () => {
-    let response = await axios.get(`${config.Base_testing}/api/admins/lastday`, {
+    let response = await axios.get(`${config.Base_Online}/api/admins/lastday`, {
       headers: {
         Authorization: `Bearer ${access_token}`,
         "Content-Type": "application/json",
@@ -37,7 +37,7 @@ export default function AdminAverageData() {
 
   const LastWeek = async () => {
     let response = await axios.get(
-      `${config.Base_testing}/api/admins/lastweek`,
+      `${config.Base_Online}/api/admins/lastweek`,
       {
         headers: {
           Authorization: `Bearer ${access_token}`,
@@ -53,7 +53,7 @@ export default function AdminAverageData() {
 
   const LastMonth = async () => {
     let response = await axios.get(
-      `${config.Base_testing}/api/admins/lastmonth`,
+      `${config.Base_Online}/api/admins/lastmonth`,
       {
         headers: {
           Authorization: `Bearer ${access_token}`,
@@ -69,7 +69,7 @@ export default function AdminAverageData() {
 
   const LastThreeMonths = async () => {
     let response = await axios.get(
-      `${config.Base_testing}/api/admins/lastthreemonths`,
+      `${config.Base_Online}/api/admins/lastthreemonths`,
       {
         headers: {
           Authorization: `Bearer ${access_token}`,
@@ -85,7 +85,7 @@ export default function AdminAverageData() {
 
   const LastYear = async () => {
     let response = await axios.get(
-      `${config.Base_testing}/api/admins/lastyear`,
+      `${config.Base_Online}/api/admins/lastyear`,
       {
         headers: {
           Authorization: `Bearer ${access_token}`,
