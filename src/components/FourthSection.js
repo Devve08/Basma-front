@@ -1,14 +1,17 @@
 import React from "react";
 import "./FourthSection.css";
 import photo from "../images/thumb-2.png";
+import { useTranslation } from "react-i18next";
 
 export default function FourthSection() {
+  const { t } = useTranslation();
+
   return (
     <div className="fourth-container">
       <div className="fourth-container-inner">
         <div className="fourth-container-left">
           <div className="fourth-container-title">
-            Share photos with your firends easily
+            {t("Fourth_section_title")}
           </div>
           <ul>
             <li>
@@ -16,9 +19,7 @@ export default function FourthSection() {
                 <i class="fas fa-layer-group"></i>
               </div>
               <span>
-                Contrary to popular belief, Lorem ipsum is not simply random
-                text. Contrary to popular belief, Lorem ipsum is not simply
-                random text.
+                {t("Fourth_one")}
               </span>
             </li>
             <li>
@@ -26,9 +27,7 @@ export default function FourthSection() {
                 <i class="fas fa-brush"></i>{" "}
               </div>
               <span>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium. Contrary to popular belief, Lorem ipsum is not
-                simply random text.
+              {t("Fourth_two")}
               </span>
             </li>
             <li>
@@ -36,9 +35,7 @@ export default function FourthSection() {
                 <i class="far fa-tint"></i>{" "}
               </div>
               <span>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit Contrary to popular belief, Lorem ipsum is not simply
-                random text.
+              {t("Fourth_three")}
               </span>
             </li>
             <li>
@@ -46,13 +43,11 @@ export default function FourthSection() {
                 <i class="fas fa-cart-arrow-down"></i>{" "}
               </div>
               <span>
-                All the Lorem ipsum generators on the internet tend to repeat
-                necessary. Contrary to popular belief, Lorem ipsum is not simply
-                random text.
+              {t("Fourth_four")}
               </span>
             </li>
           </ul>
-          <button className="fourth-container-button">Learn more</button>
+          <button className="fourth-container-button">{t("Fourth_btn")}</button>
         </div>
         <div className="fourth-container-right">
           <img src={photo} alt="" />

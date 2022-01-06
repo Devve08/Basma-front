@@ -1,17 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./SixthSection.css";
+import { useTranslation } from "react-i18next";
 
 export default function SixthSection() {
+  const { t } = useTranslation();
+
   return (
     <div className="sixth-container">
       <div className="sixth-container-upper">
-        <div className="sixth-container-upper-title">BASMA code Challenge</div>
+        <div className="sixth-container-upper-title">
+          {t("Sixth_section_title")}
+        </div>
         <div className="sixth-container-upper-dash"></div>
         <div className="sixth-container-upper-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-          doloremque sed sunt, tempore corrupti quae unde asperiores aliquam
-          nemo in.
+          {t("Sixth_section_text")}
         </div>
       </div>
       <div className="sixth-container-middle">
@@ -19,43 +22,45 @@ export default function SixthSection() {
           <div className="card-icon">
             <i class="far fa-bicycle"></i>
           </div>
-          <div className="card-title">Basic</div>
+          <div className="card-title">{t("Left_title")}</div>
           <div className="card-price">
             {" "}
             <span>$</span>45
           </div>
           <div className="card-list">
             <ul>
-              <li>5GB Linux Web Space</li>
-              <li>50 MySQL Databases</li>
-              <li>24/7 Tech Support</li>
-              <li>Daily Backups</li>
+              <li>{t("Left_1")}</li>
+              <li>{t("Left_2")}</li>
+              <li>{t("Left_3")}</li>
+              <li>{t("Left_4")}</li>
             </ul>
           </div>
-          <button className="card-btn">Sign Up</button>
+          <button className="card-btn">{t("Right_btn")}</button>
         </div>
         <div className="sixth-container-upper-cards">
           <div className="card-icon">
             <i class="fas fa-motorcycle"></i>
           </div>
-          <div className="card-title">Pro</div>
+          <div className="card-title">{t("Right_title")}</div>
           <div className="card-price">
             {" "}
             <span>$</span>129
           </div>
           <div className="card-list">
             <ul>
-              <li>10GB Linux Web Space</li>
-              <li>50 MySQL Databases</li>
-              <li>Unlimited Email</li>
-              <li>Daily Backups</li>
+              <li>{t("Right_1")}</li>
+              <li>{t("Right_2")}</li>
+              <li>{t("Right_3")}</li>
+              <li>{t("Right_4")}</li>
             </ul>
           </div>
-          <button className="card-btn">Sign Up</button>
+          <button className="card-btn">
+            {t("Right_btn")}
+          </button>
         </div>
       </div>
       <div className="sixth-container-lower">
-          Not sure what to choose? <a to='/'>Contact Us</a>
+        {t("Sixth_section_span")}
       </div>
     </div>
   );

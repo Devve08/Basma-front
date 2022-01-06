@@ -1,8 +1,10 @@
 import React from "react";
 import photo from "../images/thumb-22.png";
 import "./ThirdSection.css";
+import { useTranslation } from "react-i18next";
 
 export default function ThirdSection() {
+  const { t } = useTranslation();
   return (
     <div className="third-container">
       <div className="third-container-inner">
@@ -11,42 +13,37 @@ export default function ThirdSection() {
         </div>
         <div className="third-container-right">
           <div className="third-container-title">
-            Work faster with powerful tools.
+            {t("Third_section_title")}
           </div>
           <ul>
             <li>
               <i className="fas fa-check"></i>
               <span>
-                Combined with a handful of model sentence structures looks
-                reasonable.
+                {t("First_text")}
               </span>
             </li>
             <li>
               <i className="fas fa-check"></i>
               <span>
-                Contrary to popular belief, Lorem ipsum is not simply random
-                text.
+              {t("Second_text")}
               </span>
             </li>
             <li>
               <i className="fas fa-check"></i>
               <span>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium.
+              {t("Third_text")}
               </span>
             </li>
             <li>
               <i className="fas fa-check"></i>
               <span>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit
+              {t("Fourth_text")}
               </span>
             </li>
             <li>
               <i className="fas fa-check"></i>
               <span>
-                All the Lorem ipsum generators on the internet tend to repeat
-                necessary.
+              {t("Fifth_text")}
               </span>
             </li>
           </ul>

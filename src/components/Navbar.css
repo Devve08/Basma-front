@@ -7,6 +7,21 @@
   position: relative;
 }
 
+.select-container select{
+  padding: .5rem 1rem;
+  color: #ff2d47;
+  font-size: 1.3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  border:none;
+  outline: none;
+}
+
+.select-container option{
+  background-color: "white";
+  color: #ff2d47;
+}
+
 .navbar-section{
   display: flex;
   flex-direction: row;
@@ -45,6 +60,17 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: -1;
+}
+
+.polygon-arabic {
+  width: 50%;
+  height: 100vh;
+  background: #ff2d47;
+  clip-path: polygon(0 0, 100% 0, 50% 75%, 0 50%);
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
 

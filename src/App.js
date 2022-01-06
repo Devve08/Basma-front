@@ -30,7 +30,7 @@ function App() {
        {!access_token && (
         <>
           <Navbar />
-          <div className="polygon"></div>
+          
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/home" element={<Navigate to="/login" />} />
@@ -46,7 +46,7 @@ function App() {
       {access_token && role === "Costumer" && (
         <>
           <Navbar />
-          <div className="polygon"></div>
+          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Navigate to="/home" />} />
